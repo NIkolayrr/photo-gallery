@@ -3,6 +3,7 @@
 
 body{
     background: url('../images/ignasi_pattern_s.png');
+    overflow-x: hidden;
 }
 .jumbotron{
     background: #F57D02;
@@ -23,4 +24,10 @@ body{
     width: 48px;
     float: left;
     margin: -15px 10px -5px 0;
+}
+#contentWrap{
+    margin-top: 50px;
+}
+footer{
+    text-align: center;
 }

@@ -1,7 +1,17 @@
-(function () {
-    const kinveyBaseUrl = 'https://baas.kinvey.com/';
-    const kinveyAppID = 'kid_HJQwButH';
-    const kinveyAppSecret = '29c001eed21144b28ac79cd4716643dc';
-    
-    
+let app = Sammy('#contentWrap', function() {
+
+    this.get('#/', function() {
+        this.$element()
+            .load('templates/welcome-user.html');
+    });
+    this.get('#/Sign-in', function() {
+        this.$element()
+            .load('templates/sign-in.html');
+    });
+    this.get('#/Register', function() {
+        this.$element()
+            .load('templates/register.html');
+    });
 });
+
+app.run('#/');
