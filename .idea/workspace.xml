@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6f3d85e3-397c-4b12-a170-7dbe4793337a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/app.js" afterPath="$PROJECT_DIR$/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/main.css" afterPath="$PROJECT_DIR$/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/navbar.css" afterPath="$PROJECT_DIR$/styles/navbar.css" />
     </list>
     <ignored path="photo-gallery.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,8 +71,8 @@
       <file leaf-file-name="navbar.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/navbar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="153">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -285,12 +283,12 @@
       <updated>1472137459629</updated>
       <workItem from="1472137461000" duration="5453000" />
       <workItem from="1472189326137" duration="3434000" />
-      <workItem from="1472287806269" duration="3871000" />
+      <workItem from="1472287806269" duration="4064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12758000" />
+    <option name="totallyTimeSpent" value="12951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -366,8 +364,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/navbar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="153">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
