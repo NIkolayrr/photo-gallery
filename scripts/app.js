@@ -20,15 +20,16 @@ let app = Sammy('#contentWrap', function () {
 
     this.get('#/Gallery', function () {
         this.$element().load('./templates/gallery.html');
+        loadImagesAjax();
     });
 
 });
 
 app.run('#/');
 
-$('#galleryLink').on('click',function () {
-    $('#galleryWrap').hide().fadeIn();
-});
+// $('#galleryLink').on('click',function () {
+//     loadImagesAjax();
+// });
 
 $('#contentWrap').on('click', '#registerBtn', function () {
     register();

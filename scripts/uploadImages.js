@@ -8,15 +8,13 @@ $('#up-form').on('submit', function(e) {
 
 var onUpload = function (err, metadata) {
 
-    let _username = "guest", _password = "guest";
-    let authBase64 = btoa(_username + ":" + _password);
-
     $.ajax({
         method: "POST",
         url: "https://baas.kinvey.com/appdata/" + kinveyAppID + "/images",
-        headers: { "Authorization": "Basic " + authBase64 },
+        headers: { "Authorization": "Kinvey " + sessionStorage.getItem('authToken') },
         data: {
-            url: metadata.url
+            url: metadata.url,
+            description: $('#uploadDescription').val()
         },
         success: showSuccess,
         error: showErrors
