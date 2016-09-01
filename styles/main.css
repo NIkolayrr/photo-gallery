@@ -76,7 +76,9 @@ footer {
 }
 /* Gallery Styles */
 #galleryWrap{
-    margin-top: 20px;
+    background: rgba(255,255,255,.5);
+    height: 100%;
+    padding: 15px 0 90px 0;
 }
 #galleryWrap img{
     width: 100%;
@@ -88,9 +90,13 @@ footer {
 #galleryWrap ul li{
     float: left;
     position: relative;
-    width: 300px;
-    margin: 2px;
-    height: 150px;
+    width: 410px;
+    height: 260px;
+    margin: 1px;
+}
+#galleryWrap ul li img{
+    width: 100%;
+    position: relative;
 }
 #galleryWrap div{
     position: absolute;
@@ -105,10 +111,6 @@ footer {
     cursor: pointer;
 }
 /* Custom Buttons */
-.btn-upload{
-    border: 3px dashed cornflowerblue;
-    padding: 10px;
-}
 
 #logout{display: none;}
 

@@ -16,33 +16,25 @@ let app = Sammy('#contentWrap', function () {
 
     this.get('#/Sign-in', function () {
         this.$element().load('./templates/sign-in.html');
-        reloadGallery();
     });
 
     this.get('#/Gallery', function () {
         this.$element().load('./templates/gallery.html');
     });
 
-    this.get('#/Upload', function () {
-        this.$element().load('./templates/upload.html');
-    });
-
 });
 
 app.run('#/');
 
-function reloadGallery() {
-        $('#galleryWrap').hide().fadeIn();
-}
+$('#galleryLink').on('click',function () {
+    $('#galleryWrap').hide().fadeIn();
+});
 
 $('#contentWrap').on('click', '#registerBtn', function () {
     register();
 });
 $('#contentWrap').on('click', '#btnLogin', function () {
         login();
-});
-$('#contentWrap').on('click', '#btnUpload', function (e) {
-    submitPhoto();
 });
 $('#logout').on('click',function(){
    sessionStorage.clear();
