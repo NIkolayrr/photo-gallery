@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Photo-gallery</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/libs/jquery-3.1.0.min.js"></script>
-    <script src="scripts/libs/mustache.js"></script>
     <script src="scripts/libs/sammy.js"></script>
+    <script src="https://code.ospry.io/v1/ospry.js"></script>
 </head>
 <body>
-
 <nav class="navbar-default navbar-fixed-top" id="custom-bootstrap-menu">
     <div class="container">
         <div class="navbar-header">
@@ -27,22 +27,37 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#/">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#/Gallery" id="galleryLink">Gallery</a></li>
+                <li id="uploadLink"><a href="#/Upload">Upload Photo</a></li>
             </ul>
             <div class="navbar-form navbar-right">
-                <a href="#/Sign-in" class="btn btn-danger">Sign in</a>
+                <a href="#/Sign-in" class="btn btn-danger" id="lodinLink">Sign in</a>
+                <a href="#/" class="btn btn-default" id="logout">Logout</a>
                 <a href="#/Register" class="btn btn-info">Register</a>
             </div>
         </div><!--/.navbar-collapse -->
     </div>
 </nav>
+<div id="loading"><h1>Loading</h1></div>
+<div id="showInfo" onclick='$(this).fadeOut()'></div>
+<div id="showError" onclick='$(this).fadeOut()'></div>
 <div id="contentWrap" class="row">
 
 </div>
-<hr>
-<footer class="pull-center">
-    <p>&copy; 2016 Company, Inc.</p>
+<footer class="navbar navbar-fixed-bottom footer row">
+    <div class="col-md-12">
+        <p class="text-center text-muted">Created by Ni$ &copy; 2016</p>
+            <img src="templates/icons/facebook2.svg">
+            <img src="templates/icons/github.svg">
+            <img src="templates/icons/linkedin.svg">
+            <img src="templates/icons/twitter.svg">
+            <img src="templates/icons/instagram.svg">
+    </div>
 </footer>
 <script src="scripts/app.js"></script>
+<script src="scripts/register.js"></script>
+<script src="scripts/login.js"></script>
+<script src="scripts/loadImages.js"></script>
+<script src="scripts/uploadImages.js"></script>
 </body>
 </html>

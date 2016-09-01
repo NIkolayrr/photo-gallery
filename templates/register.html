@@ -1,13 +1,14 @@
-<form class="form-register col-md-4 col-md-offset-4">
+<form class="col-md-4 col-md-offset-4" id="formRegister">
     <h2 class="form-register-heading">Please Register</h2>
-    <label for="inputEmail">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <label for="registerUser">Name</label>
+    <input type="text"  id="registerUser" class="form-control" placeholder="User Name" required autofocus>
+    <label for="registerPass">Password</label>
+    <input type="password" id="registerPass" class="form-control" placeholder="Password" required>
+    <!-- TODO Add confirm password and functionality -->
     <div class="checkbox">
         <label>
             <input type="checkbox" value="remember-me"> Remember me
         </label>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+    <button class="btn btn-lg btn-primary btn-block" type="button" id="registerBtn">Register</button>
 </form>
