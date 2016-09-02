@@ -4,6 +4,7 @@ let kinveyAppID = "kid_S1o3uK2q";
 let kinveyAppSecret = "094983de39be484f9e2b746137d5d403";
 let _guestCredentials = "8e20e2a5-4384-4d08-8ed0-0640620d0414.QCAp8Kwwo2CPQ0UTMRBl/Jl8gAgQVVpWZ947jDxHdII=";
 var ospry = new Ospry('pk-test-nlwh4l58p9i9uuhgd4wlve1i');
+let contentWrap = $('#contentWrap');
 
 let app = Sammy('#contentWrap', function () {
     this.get('#/', function () {
@@ -27,16 +28,25 @@ let app = Sammy('#contentWrap', function () {
 
 app.run('#/');
 
-// $('#galleryLink').on('click',function () {
-//     loadImagesAjax();
-// });
 
-$('#contentWrap').on('click', '#registerBtn', function () {
-    register();
+
+contentWrap.on('click', '#registerBtn', function () {
+    if($('#registerUser').val().length > 0 && $('#registerPass').val().length > 0) {
+        
+        if ($('#registerPass').val() != $('#confirmPass').val()) {
+            showError('passwords do not match');
+        } else {
+            register();
+        }
+    }else{
+        showError('input cant be null');
+    }
 });
-$('#contentWrap').on('click', '#btnLogin', function () {
+
+contentWrap.on('click', '#btnLogin', function () {
         login();
 });
+
 $('#logout').on('click',function(){
    sessionStorage.clear();
     $('#logout').hide();
