@@ -3,6 +3,7 @@ function register(){
     const kinveyAuthHeaders = {
         'Authorization': "Basic " + btoa(kinveyAppID + ":" + kinveyAppSecret),
     };
+    <!-- TODO pasword confirm -->
     let userData ={
         username: $('#registerUser').val(),
         password: $('#registerPass').val()
